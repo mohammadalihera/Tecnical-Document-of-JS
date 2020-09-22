@@ -1,0 +1,154 @@
+body{
+	display:flex;
+	font-family: "Open Sans", Arial, sans-serif;
+	color:#4d4e53;
+}
+#navbar{
+	width:100%;
+	height:100%;
+	margin:10px 50px 10px 0;
+}
+#navheader{
+	font-size:1.8em;
+	margin-left:10px;
+	width:300px;
+}
+#navlist{
+	list-style-type: none;
+	width:250px;
+	margin-left:-30px;
+}
+hr{
+	margin-left:-40px;
+	width:280px;
+}
+.navliststyle a{
+	font-size:16px;
+	color:#4d4e53;
+	text-decoration: none;
+}
+.content {
+   
+   height: 100%;
+}
+
+.wrapper {
+  position:fixed;
+  width: 300px; 
+  height: 500px; 
+  padding: 0; 
+  overflow-y: scroll; 
+  overflow-x: hidden; 
+  
+}
+
+.wrapper::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+.wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+    
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-right: none;
+    border-left: none;
+}
+
+.wrapper::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+.wrapper::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+main{
+	margin:10px 40px 10px 20px;
+}
+header{
+	font-size: 1.8em;
+	color:black;
+	margin-bottom:20px;
+}
+article{
+	margin-left:10px;
+}
+code{
+	display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+p{
+	margin:20px 0px 20px 0px;
+}
+.datatypepri{
+	margin-bottom:10px;
+}
+
+@media screen and (max-width:800px){
+	body{
+		flex-direction:column;
+	}
+	#navbar{
+		width:auto;
+		margin-left:250px;
+		margin-bottom:600px;
+		margin-top:100px;
+   }
+   .wrapper{
+   	position:absolute;
+   	width:900px;
+   }
+   hr{
+   	width:900px
+   }
+   #navheader{
+   	font-size:60px;
+   	width:auto
+   }
+   #navlist{
+   	width:1000px;
+   }
+   .navliststyle a{
+   	font-size:50px;
+
+   }
+   main{
+   	widht:100%;
+   	margin-left:80px
+
+   }
+   .main-section{
+   	width:1200px;
+   	font-size:50px;
+   	margin-bottom:50px;
+   	line-height:1.4
+
+   }
+   header{
+   	font-size:80px;
+   }
+   p{
+   	font-size:50px;
+   	line-height:70px;
+   	text-align:justify
+   }
+   code{
+   	padding-right:1300px;
+   	font-size:40px;
+   	text-aligh:left;
+   	padding-left:0
+   }
+
+}
